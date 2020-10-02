@@ -55,8 +55,8 @@ for name in names_1:
     bstree.insert(name)
 
 for name in names_2:
-    if bstree.contains(name):
-        duplicates.append(name)
+    if bstree.contains(name): #this searches the tree to see if the bstree contains()
+        duplicates.append(name) #append adds a single item to a list
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
